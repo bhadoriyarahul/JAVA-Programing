@@ -1,0 +1,15 @@
+<script>
+    var n=parseInt(prompt('enter three digit no to armstrong'))
+    var r, sum=0
+    for (i=n; i>=1; i=i /10) {
+        r= parseInt (i % 10)
+        sum = sum + (r*r*r)
+    }
+    document.write( + sum +"")
+    if (sum ==n){
+        document.write(" is armstrong")
+    }
+    else {
+     document.write("no is not armstrong")
+    }
+    </script>
