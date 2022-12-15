@@ -1,0 +1,21 @@
+<script>
+    //WAP to sort element inside array
+    
+    var ar=[10,120,310,140,510,160,710];
+    //[20,30,40,50,60,70,10]
+    
+    document.write("Before sort :"+ar+"<br>");
+    
+    for(let j=0;j<ar.length-1;j++)
+    {
+    for(let i=0;i<ar.length-1;i++)
+    {
+     if(ar[i]<ar[i+1])
+     {
+      let temp=ar[i];
+      ar[i]=ar[i+1];
+      ar[i+1]=temp;
+     }
+    }
+    }
+</script>   
