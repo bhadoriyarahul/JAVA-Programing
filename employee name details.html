@@ -1,0 +1,19 @@
+<script>
+
+var empDetails=[{"eno":1001,"enm":"Jarvis","esal":10000.56},{"eno":1002,"enm":"Jany","esal":20000.16},{"eno":1003,"enm":"John","esal":30000.26}];
+
+document.write("<h1>Employee Details</h1>");
+for(let row of empDetails )
+{
+    for(let key in row)
+    {
+        document.write(key+"--->"+row[key]+"<br>");
+}
+document.write("<br>");
+}
+document.write("<h1>Employee Details manual Access</h1>");
+document.write("Emp1 eno : "+empDetails[0]["eno"]+"<br>");
+document.write("Emp2 enm : "+empDetails[1]["enm"]+"<br>");
+document.write("Emp3 esal : "+empDetails[2].esal);
+
+</script>
