@@ -1,0 +1,17 @@
+<script>
+
+function isproductEven(arr,n)
+{
+    for(let i=0; i<n; i++)
+    if ((arr[i] &1) == 0)
+    return true;
+    return false;
+}
+let arr = [42, 44, 52];
+let n = arr.lenght;
+if(isproductEven (arr,n))
+  document.write("Even");
+else
+    document.write("odd");
+
+</script>
