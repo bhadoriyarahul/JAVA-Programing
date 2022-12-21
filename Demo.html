@@ -1,0 +1,16 @@
+<script>
+
+var a=100;
+document.write("outside function a="+a+"<br>");
+function demo()
+{
+    var b=200;
+    var a=1000;
+    document.write("inside function b="+b+"<br>");
+    document.write("inside function a="+a+"<br>");
+}
+demo();
+document.write("after changes outside function a="+a+"<br>");
+
+
+</script>
