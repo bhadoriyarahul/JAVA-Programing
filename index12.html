@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Event Demo</title>
+<style>
+#main
+{
+ height:450px;
+ width:600px;
+ border:2px solid black;
+}
+#main img
+{
+ border:1px solid black;
+}
+#main_part1
+{
+ height:300px;
+}
+#main_part2
+{
+ height:150px;
+}
+#main_part2 img
+{
+ margin:0px 20px 0px 20px;
+}
+</style>
+<script type="text/javascript" >
+
+function changeImage(s)
+{
+ document.getElementById("myimg").src=s;
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1>Image Gallary</h1>
+<div id="main" >
+    <div id="main_part1" >
+    <br/><br/>
+    <img id="myimg" src="./images/img1.png" height="230" width="400" />
+    </div>
+    <hr/>	 
+    <div id="main_part2" >
+    <img src="./images/img2.png" onmouseenter="changeImage(this.src)" height="100" width="100" />
+    <img src="./images/img3.jpeg" onmouseenter="changeImage(this.src)" height="100" width="100" />
+    <img src="./images/img4.jpeg" onmouseenter="changeImage(this.src)" height="100" width="100" />
+    <img src="./images/img5.png" onmouseenter="changeImage(this.src)" height="100" width="100" />
+    </div>
+</div>
+</center>
+</body>
+</html>
